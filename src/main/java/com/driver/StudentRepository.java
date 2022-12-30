@@ -26,6 +26,7 @@ public class StudentRepository {
             if(studentTeacherPair.containsKey(teacherName)) studentTeacherPair.get(teacherName).add(studentName);
             else{
                 List<String> studentList=new ArrayList<String>();
+                studentList.add(studentName);
                 studentTeacherPair.put(teacherName,studentList);
             }
         }
