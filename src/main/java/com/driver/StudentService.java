@@ -35,6 +35,9 @@ public class StudentService {
         return sr.getStudentsByTeacherNameFromDb(teacherName);
     }
 
+    List<String> getAllStudentsService(){
+        return sr.getAllStudentsFromDb();
+    }
     void deleteTeacherBynameService(String teacherName){
         sr.deleteTeacherByNameFromDb(teacherName);
     }

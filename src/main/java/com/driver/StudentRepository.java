@@ -43,6 +43,9 @@ public class StudentRepository {
         return studentTeacherPair.get(teacherName);
     }
 
+    List<String> getAllStudentsFromDb(){
+        return new ArrayList<>(studentDb.keySet());
+    }
     void deleteTeacherByNameFromDb(String teacherName){
         if(teacherDb.containsKey(teacherName)){
             if(studentTeacherPair.containsKey(teacherName)){
